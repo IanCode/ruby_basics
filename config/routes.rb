@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  #root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -53,4 +53,15 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+    post 'book/create'
+    get 'book/list'
+    get 'book/new'
+    get 'book/create'
+    get 'book/update'
+    get 'book/list'
+    get 'book/show'
+    get 'book/edit'
+    get 'book/delete'
+    get 'book/update'
+    get 'book/show_subjects'
 end
