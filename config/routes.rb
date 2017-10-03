@@ -57,7 +57,7 @@ Rails.application.routes.draw do
     get 'book/list'
     get 'book/new'
     get 'book/create'
-    get 'book/update'
+    patch 'book/update'
     get 'book/list'
     get 'book/show'
     get 'book/edit'
