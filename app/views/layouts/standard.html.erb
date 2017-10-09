@@ -6,7 +6,14 @@
       <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
       <meta http-equiv = "Content-Language" content = "en-us" />
       <title>Library Info System</title>
+      <link rel="stylesheet" href="style.css"/>
       <%= stylesheet_link_tag "materialize" %>
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+	     crossorigin=""/>
+       <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+      crossorigin=""></script>
    </head>
    <nav>
          <div class="nav-wrapper" style="background-color: #d6eaf8;  font-family: 'Josefin Sans', sans-serif; color: black">
@@ -15,13 +22,15 @@
    </nav>
    <body id = "library">
       <h3 style = "text-align: center;">Library powered by Ruby on Rails</h3>
-      <div id = "container" class="z-depth-2" style = "margin-bottom: 20px; margin-right: 10px; margin-left: 10px; padding-left: 10px; padding-right: 10px;">
+      <div id = "container"  style = "margin-bottom: 20px; padding-left: 10px; padding-right: 10px;">
 
          <div id = "content">
             <%= yield -%>
          </div>
 
-         <div id = "sidebar"></div>
+	 <div id = "sidebar"></div>
+
+	 <div id = "mapid"></div>
          
       </div>
       </div>
